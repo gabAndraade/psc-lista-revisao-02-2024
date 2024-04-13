@@ -15,7 +15,7 @@ public class Revisao11 {
                 break;
                 
             }
-            int escolhaPC = random.nextInt(3);
+            int escolhaPC = random.nextInt(3)+1;
             String jogadaPC = opcoes[escolhaPC];
             System.out.println("O computador escolheu: "+jogadaPC);
             if (escolhaJogador == 1 && jogadaPC.equals("Pedra")) {
