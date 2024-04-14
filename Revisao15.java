@@ -9,16 +9,17 @@ public class Revisao15 {
         scanner.close();
     }
     public static double calculoIR(double salario){
-        if (salario <= 1903.98) {
+        if (salario <= 2259.20) {
+            System.out.println("Isento");
             return 0;            
-        }else if(salario<=2826.65){
-            return(salario - 1903.98)*0.075;
+        }else if(salario<=2828.65){
+            return(salario - 2259.20)*0.075;
         }else if(salario <=3751.05){
-            return(salario - 2826.65)*0.15 +69.36;
+            return(salario - 2828.65)*0.15;
         }else if(salario<= 4664.68){
-            return (salario - 3751.05)*0.225 +352.80;
+            return (salario - 3751.05)*0.225;
         } else {
-            return (salario - 4664.68)*0.275 +636.13;
+            return (salario - 4664.68)*0.275;
         }
         
     }
